@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Afasias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+      font-weight: 1 999;
+    }
+
+    html {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    }
+    @supports (font-variation-settings: normal) {
+      html {
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+    body {
+      background-color: #2193ae;
+      margin: 0;
+      color: #353935;
+    }
+
+    a {
+      color: #353935;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .layer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    #background-layer {
+      z-index: 10;
+
+      background-image: url("./images/body_background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+      opacity: 0.1;
+    }
+
+    #container-layer {
+      z-index: 20;
+
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      margin: 15px;
+    }
+
+    .card {
+      background-color: #FFF;
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.5);
+
+      padding: 10px;
+    }
+
+    .card .header {
+      display: flex;
+
+      height: 30%;
+      text-align: center;
+    }
+
+    .card .header .logo {
+      border-radius: 10px 10px 0 0;
+
+      background-image: url("./images/body_background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+
+      min-height: 30vw;
+      min-width: 100%;
+    }
+
+    .card .header .logo img {
+      max-width: 100%;
+      max-height: 50vh;
+
+      height: 100%;
+    }
+
+    .card .content {
+      display: flex;
+      flex-direction: column;
+
+      height: 70%;
+    }
+
+    .card .content .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      font-size: 1.07em;
+      margin: 0 10px;
+    }
+
+    .card .social-networks {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .card .social-networks .icon {
+      width: auto;
+      height: 32px;
+
+      margin: auto;
+      vertical-align: middle;
+    }
+
+    .footer {
+      text-align: end;
+
+      font-size: 0.7em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container-layer">
+    <div class="card">
+      <div class="header">
+        <section class="logo">
+          <!-- <img src="./images/logo.png"> -->
+        </section>
+      </div>
+
+      <div class="content">
+        <h2>Afasias</h2>
+
+        <h3>Evaluación y Rehabilitación de Pacientes Neurológicos Adultos</h3>
+
+        <section id="author">
+          <h4>Lic. Olga Natalia Pinto</h4>
+        </section>
+
+        <section class="contact-info">
+          <div class="contact-item">
+            <a href="mailto: rehabilitacion.de.afasias@gmail.com">📬 rehabilitacion.de.afasias@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <a href="tel: 5491134391981">☎️ 15-3439-1981</a>
+          </div>
+
+          <div class="contact-item">
+            <a href="https://goo.gl/maps/aZmGCutVof89oDMa6">🗺 Av. Rivadavia alt. 10900. Liniers. CABA.</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card">
+      <section class="social-networks">
+        <a
+          href="https://wa.me/5491134391981?text=Hola%20Natalia.%20Quisiera%20preguntarte%20acerca%20de%20disponibilidad%20para%20una%20consulta.%20Muchas%20gracias!">
+          <img class="icon" src="./images/whatsapp.png" />
+        </a>
+        <a href="#">
+          <img class="icon" src="./images/instagram.png" />
+        </a>
+        <a href="#">
+          <img class="icon" src="./images/linkedin.png" />
+        </a>
+      </section>
+    </div>
+
+    <div class="card">
+      <div class="footer">
+        <div>
+          <a
+            href="https://www.freepik.com/free-vector/chat-elements_1010187.htm#query=chat%20background&position=4&from_view=keyword&track=ais">Background
+            image by macrovector</a> on Freepik
+        </div>
+        <div>
+          Made with ❤️
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
