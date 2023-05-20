@@ -33,6 +33,10 @@
       font-size: 0.9em;
     }
 
+    h1, h2 {
+      margin: 20px 0 0;
+    }
+
     .layer {
       position: absolute;
       top: 0;
@@ -56,7 +60,7 @@
       z-index: 20;
 
       background: transparent;
-      
+
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -113,6 +117,20 @@
       flex-direction: column;
 
       height: 70%;
+      margin: 0 10px;
+    }
+
+    .card .content .author {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      font-size: 1.8em;
+      margin: 20px 0 0;
+    }
+
+    .card .content .author .author-title {
+      font-size: 0.7em;
     }
 
     .card .content .contact-info {
@@ -120,8 +138,31 @@
       flex-direction: column;
       gap: 5px;
 
-      font-size: 1.07em;
-      margin: 0 10px;
+      font-size: 1.2em;
+      margin: 20px 0 0;
+    }
+
+    .card .content .contact-info .contact-item {
+      margin: 5px 0;
+    }
+
+    .card .content .contact-info .contact-item a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card .content .contact-info .contact-item a .icon {
+      flex: 0;
+      width: auto;
+      height: 32px;
+
+      margin: auto;
+      vertical-align: middle;
+    }
+
+    .card .content .contact-info .contact-item a label {
+      flex: 1;
     }
 
     .card .social-networks {
@@ -156,25 +197,39 @@
       </div>
 
       <div class="content">
-        <h2>Afasias</h2>
+        <h1>Afasias.com</h1>
 
-        <h3>Evaluación y Rehabilitación de Pacientes Neurológicos Adultos</h3>
+        <h2>Evaluación y Rehabilitación de Pacientes Neurológicos Adultos</h2>
 
-        <section id="author">
-          <h4>Lic. Olga Natalia Pinto</h4>
+        <section class="author">
+          <div class="author-name">
+            Olga Natalia Pinto
+          </div>
+          <div class="author-title">
+            Lic. en Fonoaudiología
+          </div>
         </section>
 
         <section class="contact-info">
           <div class="contact-item">
-            <a href="mailto: rehabilitacion.de.afasias@gmail.com">📬 rehabilitacion.de.afasias@gmail.com</a>
+            <a href="mailto: rehabilitacion.de.afasias@gmail.com">
+              <img class="icon" src="./images/mail.svg" />
+              <label>rehabilitacion.de.afasias@gmail.com</label>
+            </a>
           </div>
 
           <div class="contact-item">
-            <a href="tel: 5491134391981">☎️ 15-3439-1981</a>
+            <a href="tel: 5491134391981">
+              <img class="icon" src="./images/phone.svg" />
+              <label>15-3439-1981</label>
+            </a>
           </div>
 
           <div class="contact-item">
-            <a href="https://goo.gl/maps/aZmGCutVof89oDMa6">🗺 Zona Liniers. CABA.</a>
+            <a href="https://goo.gl/maps/aZmGCutVof89oDMa6">
+              <img class="icon" src="./images/location.svg" />
+              <label>Liniers. CABA.</label>
+            </a>
           </div>
         </section>
       </div>
