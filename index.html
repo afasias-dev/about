@@ -66,7 +66,7 @@
       gap: 20px;
       align-items: center;
 
-      margin: 15px;
+      min-height: 100vh;
     }
 
     .card {
@@ -84,8 +84,17 @@
       padding: 10px;
     }
 
+    .card:first-child {
+      margin-top: 20px;
+    }
+
+    .card:last-child {
+      margin-bottom: 20px;
+    }
+
     .card .header {
       display: flex;
+      flex: 1;
 
       height: 30%;
       text-align: center;
@@ -184,12 +193,20 @@
 
       font-size: 0.7em;
     }
+
+    .grow {
+      flex: 1;
+    }
+
+    .no-grow {
+      flex: 0;
+    }
   </style>
 </head>
 
 <body>
   <div id="container-layer">
-    <div class="card">
+    <div class="card grow">
       <div class="header">
         <section class="logo">
           <!-- <img src="./images/logo.png"> -->
@@ -235,7 +252,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card no-grow">
       <section class="social-networks">
         <a
           href="https://wa.me/5491134391981?text=Hola%20Natalia.%20Quisiera%20preguntarte%20acerca%20de%20disponibilidad%20para%20una%20consulta.%20Muchas%20gracias!">
@@ -250,7 +267,7 @@
       </section>
     </div>
 
-    <div class="card">
+    <div class="card no-grow">
       <div class="footer">
         <div>
           <a
